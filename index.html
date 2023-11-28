@@ -1,52 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>MyGallery</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Gallery</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-    <header>
-        <h1>HesGallery</h1>
-    </header>
-   
-    <main>
-        <h2>Off Road</h2>
-        <div class="hes-gallery">
-            <img src="img/dogo-uno-min.jpg" alt="image1" data-fullsize="img/dogo-uno.jpg" data-subtext='piesiak'>
-            <img src="img/dogo-dos.jpeg" alt="image2" data-subtext="Podpis zdjecia kolejnego">
-            <img src="img/dogo-tres.jpeg" alt="image3" data-subtext="Kolejny podpis zdjecia">
-            <img src="img/dogo-cuatro.jpeg" alt="image4" data-subtext="Podpis czwartego juz zdjecia" >
-        </div>
-
-        <h2>Super Cars</h2>
-        <div class="hes-gallery" data-wrap="true" data-img-count="false">
-            <img src="img/uno.jpeg" alt="image1" data-subtext="kociak" data-alt="kociak">
-            <img src="img/dos.jpeg" alt="image2" data-subtext="Kolejny kociak">
-            <img src="img/tres.jpeg" alt="image3" data-subtext="Trzeci kociak ^^" >
-            <img src="img/cuatro.jpeg" alt="image4" data-subtext="Leci czwart" data-alt="co jeest" >
-            <img src="img/cinto.jpeg" alt="image5" data-subtext="Daleeeej" >
-            <img src="img/seis.jpeg" alt="image6" data-subtext="Kozaaak" >
-            <img src="img/siete.jpeg" alt="image7" data-subtext="Slodziaaaaak" >
-            <img src="img/ocho.jpeg" alt="image8" data-subtext="Ostatni kociak :/" >
-        </div>
-
-    </main>
-
-    <script src="src/hes-gallery.js"></script>
-    <script>
-
-        HesGallery.setOptions({
-            disableScrolling: false,
-            hostedStyles: false,
-            animations: true,
-            minResolution: 1000,
-
-            showImageCount: true,
-            wrapAround: true
-        });
-
-    </script>
+  <h1 style="text-align:center;">Cars Gallery</h1>
+  <div id="buttons">
+    <div id="buttons">
+      <button onclick="MyFn(this)" class="ShowAll">Show All</button>
+      <button onclick="MyFn(this)" class="Volkswagen">Volkswagen (4)</button>
+      <button onclick="MyFn(this)" class="BMW">BMW (4)</button>
+      <button onclick="MyFn(this)" class="Audi">Audi(4)</button>
+      <button onclick="MyFn(this)" class="Isuzu">Isuzu (4)</button>
+      <button onclick="MyFn(this)" class="Lamborghini">Lamborghini (4)</button>
+      <button onclick="MyFn(this)" class="Ferrari">Ferrari(4)</button>
+      <button onclick="MyFn(this)" class="Mercides">Mercides Bnez (4)</button>
+    </div>
+  </div>
+  <div id="gallery">
+    <img src="img/01.jpg" id="Volkswagen" data-tags="Volkswagen" />
+    <img src="img/11.jpg" id="Volkswagen" data-tags="Volkswagen" />
+    <img src="img/12.jpg" id="Volkswagen" data-tags="Volkswagen" />
+    <img src="img/13.jpg" id="Volkswagen" data-tags="Volkswagen" />
+    <img src="img/02.jpg" id="BMW" data-tags="BMW" />
+    <img src="img/20.jpg" id="BMW" data-tags="BMW" />
+    <img src="img/21.jpg" id="BMW" data-tags="BMW" />
+    <img src="img/22.jpg" id="BMW" data-tags="BMW" />
+    <img src="img/03.jpg" id="Audi" data-tags="Audi" />
+    <img src="img/33.jpg" id="Audi" data-tags="Audi" />
+    <img src="img/34.jpg" id="Audi" data-tags="Audi" />
+    <img src="img/35.jpg" id="Audi" data-tags="Audi" />
+    <img src="img/04.jpg" id="Isuzu" data-tags="Isuzu" />
+    <img src="img/44.jpg" id="Isuzu" data-tags="Isuzu" />
+    <img src="img/45.jpg" id="Isuzu" data-tags="Isuzu" />
+    <img src="img/46.jpg" id="Isuzu" data-tags="Isuzu" />
+    <img src="img/05.jpg" id="Lamborghini" data-tags="Lamborghini" />
+    <img src="img/55.jpg" id="Lamborghini" data-tags="Lamborghini" />
+    <img src="img/56.jpg" id="Lamborghini" data-tags="Lamborghini" />
+    <img src="img/57.jpg" id="Lamborghini" data-tags="Lamborghini" />
+    <img src="img/06.jpg" id="Ferrari" data-tags="Ferrari" />
+    <img src="img/66.jpg" id="Ferrari" data-tags="Ferrari" />
+    <img src="img/67.jpg" id="Ferrari" data-tags="Ferrari" />
+    <img src="img/68.jpg" id="Ferrari" data-tags="Ferrari" />
+    <img src="img/07.jpg" id="Mercides" data-tags="Mercides" />
+    <img src="img/77.jpg" id="Mercides" data-tags="Mercides" />
+    <img src="img/78.jpg" id="Mercides" data-tags="Mercides" />
+    <img src="img/79.jpg" id="Mercides" data-tags="Mercides" />
+  </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="js/filter-tags.js"></script>
 </body>
+
 </html>
